@@ -16,8 +16,8 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header-text text-4xl text-center font-semibold">
-        <h1>Save Money Help People</h1>
+    <header class="dark-text text-4xl text-center font-semibold">
+        <h1>Save Money Help People </h1>
     </header>
 
     <!-- Main Section -->
@@ -26,10 +26,43 @@
             <div id="image" class="image flex-auto w-7/12">
                 <img src="images/5252601.jpg" alt="">
             </div>
-            <div id="calculation" class="flex-auto w-5/12"></div>
+            <div id="calculation" class="calculation flex-auto w-5/12">
+                <p class="input-heading dark-text font-semibold">Income</p>
+                <div class="flex income-input dark-text">
+                    <p class="input-text">Income:</p>
+                    <input id="income" class="input-style rounded" type="text">
+                </div>
+                <p class="expenses-heading">Expenses</p>
+                <div class="flex income-input dark-text">
+                    <p class="input-text">Food:</p>
+                    <input id="food" class="input-style rounded" type="text">
+                </div>
+                <div class="flex income-input dark-text">
+                    <p class="input-text">Rent:</p>
+                    <input id="rent" class="input-style rounded" type="text">
+                </div>
+                <div class="flex income-input dark-text">
+                    <p class="input-text">Clothes:</p>
+                    <input id="clothes" class="input-style rounded" type="text">
+                </div>
+                <button class="calculate-button">
+                    Calculate
+                </button>
+                <p class="total-expenses">Total Expenses: 5500</p>
+                <p class="balance">Balance: 4500</p>
+                <div class="flex saving ">
+                    <p>Save:</p>
+                    <input id="savings-parsent" class="saving-input rounded" type="text">
+                    <p>%</p>
+                    <button class="saving-button">Save</button>
+                </div>
+                <p class="saving-amount">Saving Amount: <span id="total-savings">2000</span> </p>
+                <p class="remaining-balance">Remaining Balance: <span id="remaining-balance">2500</span></p>
+            </div>
         </div>
     </main>
 
+    
     <!-- JS link -->
     <script src="JS/app.js"></script>
 </body>

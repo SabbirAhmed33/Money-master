@@ -2,6 +2,23 @@ body{
     /* Google Fonts */
     font-family: 'Poppins', sans-serif;
 }
+/* Common Classes */
+.dark-text{
+    color: #1B2E35;
+}
+.input-style{
+    width: 229px;
+    height: 44px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 90px;
+}
+.input-heading{
+    font-size: 22px;
+    margin: 50px 206px 30px 262px;
+    font-weight: 500;
+}
+
 /* Header Section */
 header{
     margin-top: 37px;
@@ -9,7 +26,7 @@ header{
 
 /* Main Section */
 main{
-    margin: 38px 55px 65px 75px;
+    margin: 38px 100px 65px 100px;
 }
 
 /* Image Section */
@@ -19,8 +36,81 @@ main{
     width: 800px;
     height: 815px;
 }
-.header-text{
-    color: #1B2E35;
-}
 
 /* Calculation Section */
+.calculation{
+    width: 542px;
+    height: 815px;
+    background-color: #D5F8E7;
+}
+
+.income-input{
+    margin-left: 144px;
+    margin-top: 25px;
+}
+.input-text{
+    width: 65px;
+    height: 21px;
+    font-weight: 400;
+    align-self: center;
+}
+.expenses-heading{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: 250px;
+}
+.calculate-button{
+    background: #59E4A8;
+    color: #ffff;
+    font-weight: 700;
+    width: 199px;
+    height: 51px;
+    margin-top: 25px;
+    margin-left: 199px;
+}
+.total-expenses{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 25px;
+    padding-left: 193px;
+    margin-bottom: 30px;
+}
+.balance{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 34px;
+    margin-left: 228px;
+}
+.saving{
+    padding-left: 95px;
+    align-items: center;
+}
+.saving-button{
+    background: #59E4A8;
+    color: #ffff;
+    font-weight: 700;
+    width: 173px;
+    height: 44px;
+    margin-left: 15px;
+}
+.saving-input{
+    width: 132px;
+    height: 44px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.saving-amount{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 34px;
+    margin-bottom: 15px;
+    margin-left: 193px;
+}
+.remaining-balance{
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 173px;
+    margin-bottom: 38px;
+}
