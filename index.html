@@ -22,46 +22,52 @@
 
     <!-- Main Section -->
     <main>
-        <div id="main-section" class="flex main-section">
+        <div id="main-section" class="flex flex-col md:flex-row">
             <div id="image" class="image flex-auto w-7/12">
                 <img src="images/5252601.jpg" alt="">
             </div>
-            <div id="calculation" class="calculation flex-auto w-5/12">
-                <p class="input-heading dark-text font-semibold">Income</p>
+            <div id="calculation" class="calculation rounded flex-auto w-5/12">
+                <p class="input-heading dark-text">Income</p>
                 <div class="flex income-input dark-text">
-                    <p class="input-text">Income:</p>
+                    <p class="input-text dark-text">Income:</p>
                     <input id="income" class="input-style rounded" type="text">
                 </div>
-                <p class="expenses-heading">Expenses</p>
+                <div class="notify-section">
+                    <p id="use-numbers" class="notify">❌ Please Give only Numbers</p>
+                    <p id="use-positive-numbers" class="notify">❌ Please Don't Use (-) Numbers</p>
+                </div>
+                <p class="expenses-heading dark-text">Expenses</p>
                 <div class="flex income-input dark-text">
                     <p class="input-text">Food:</p>
-                    <input id="food" class="input-style rounded" type="text">
+                    <input id="food" class="input-style rounded dark-text" type="text">
                 </div>
                 <div class="flex income-input dark-text">
-                    <p class="input-text">Rent:</p>
+                    <p class="input-text dark-text">Rent:</p>
                     <input id="rent" class="input-style rounded" type="text">
                 </div>
                 <div class="flex income-input dark-text">
                     <p class="input-text">Clothes:</p>
                     <input id="clothes" class="input-style rounded" type="text">
                 </div>
-                <button class="calculate-button">
+                <button id="calculate-button" class="calculate-button rounded dark-text">
                     Calculate
                 </button>
-                <p class="total-expenses">Total Expenses: 5500</p>
-                <p class="balance">Balance: 4500</p>
-                <div class="flex saving ">
+                <p class="total-expenses dark-text">Total Expenses: <span id="total-cost">00</span></p>
+                <p class="balance dark-text">Balance: <span id="balance">00</span></p>
+                <div class="notify-section">
+                    <p id="over-cost" class="notify">❌ Your Balance is Over and You are in debt now</p>
+                </div>
+                <div class="flex saving dark-text">
                     <p>Save:</p>
                     <input id="savings-parsent" class="saving-input rounded" type="text">
                     <p>%</p>
-                    <button class="saving-button">Save</button>
+                    <button id="save-button" class="saving-button rounded">Save</button>
                 </div>
-                <p class="saving-amount">Saving Amount: <span id="total-savings">2000</span> </p>
-                <p class="remaining-balance">Remaining Balance: <span id="remaining-balance">2500</span></p>
+                <p class="saving-amount dark-text">Saving Amount: <span id="total-savings">00</span> </p>
+                <p class="remaining-balance dark-text">Remaining Balance: <span id="remaining-balance">00</span></p>
             </div>
         </div>
     </main>
-
     
     <!-- JS link -->
     <script src="JS/app.js"></script>

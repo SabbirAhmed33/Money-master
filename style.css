@@ -15,7 +15,7 @@ body{
 }
 .input-heading{
     font-size: 22px;
-    margin: 50px 206px 30px 262px;
+    margin: 50px auto 30px 270px;
     font-weight: 500;
 }
 
@@ -26,6 +26,7 @@ header{
 
 /* Main Section */
 main{
+    /* text-align: center; */
     margin: 38px 100px 65px 100px;
 }
 
@@ -58,7 +59,8 @@ main{
     font-size: 22px;
     font-weight: 500;
     margin-top: 25px;
-    margin-left: 250px;
+    margin-left: 268px;
+    margin-right: 196px;
 }
 .calculate-button{
     background: #59E4A8;
@@ -67,23 +69,23 @@ main{
     width: 199px;
     height: 51px;
     margin-top: 25px;
-    margin-left: 199px;
+    margin-left: 240px;
 }
 .total-expenses{
     font-size: 22px;
     font-weight: 500;
-    margin-top: 25px;
-    padding-left: 193px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 230px;
+    margin-bottom: 25px;
 }
 .balance{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 34px;
-    margin-left: 228px;
+    margin-left: 260px;
 }
 .saving{
-    padding-left: 95px;
+    padding-left: 130px;
     align-items: center;
 }
 .saving-button{
@@ -106,11 +108,37 @@ main{
     font-weight: 500;
     margin-top: 34px;
     margin-bottom: 15px;
-    margin-left: 193px;
+    margin-left: 230px;
 }
 .remaining-balance{
     font-size: 22px;
     font-weight: 500;
-    margin-left: 173px;
+    margin-left: 215px;
     margin-bottom: 38px;
+}
+.notify {
+    color: #1B2E35;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 0 20px;
+    display: none;
+}
+.notify-section{
+    margin: 0 auto;
+}
+@media (max-width: 768px ) {
+    .image{
+        width: 100%;
+    }
+    .calculation{
+        max-width: 50%;
+    }
+    .input-heading{
+        margin-left: 0;
+    }
+    .input-text{
+        margin-left: 0;
+        padding-left: 0;
+    }
 }
