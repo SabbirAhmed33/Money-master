@@ -116,6 +116,8 @@ main{
     margin-left: 215px;
     margin-bottom: 38px;
 }
+
+/* Error Handaler */
 .notify {
     color: #1B2E35;
     text-align: center;
@@ -127,18 +129,65 @@ main{
 .notify-section{
     margin: 0 auto;
 }
-@media (max-width: 768px ) {
-    .image{
+
+/* Media Quari */
+@media only screen and (max-width: 768px) {
+    main{
+        margin: 0;
+    }
+    header{
+        text-align: center;
+    }
+    
+    .image img{
         width: 100%;
+        margin: auto;
+    }
+    .w-7\/12 {
+        width: 100% !important;
+    }
+    .w-5\/12{
+        width: 100% !important;
     }
     .calculation{
-        max-width: 50%;
+        text-align: center;
     }
     .input-heading{
-        margin-left: 0;
+        margin: 0;
+        padding-top: 30px;
     }
-    .input-text{
-        margin-left: 0;
-        padding-left: 0;
+    .income-input {
+        margin: 0;
+        margin-top: 25px;
     }
+    .expenses-heading{
+        margin: 0;
+        padding-top: 25px;
+    }
+    .calculate-button{
+        margin: 0;
+        margin-top: 30px;
+    }
+    .total-expenses{
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .balance{
+        margin: 0;
+        margin-top: 25px;
+        padding-bottom: 30px;
+    }
+    .saving{
+        padding: 0;
+    }
+    .saving-amount{
+        padding-top: 30px;
+        margin: 0;
+    }
+    .remaining-balance{
+        padding-top: 30px;
+        margin: 0;
+    }
+
 }

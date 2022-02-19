@@ -3,6 +3,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
     // Get Income value
     const totalIncome = document.getElementById('income');
     const getInput = totalIncome.value;
+    
     // Input Error Handaler
     const positiveNumbers = document.getElementById('use-positive-numbers');
     const useOnlyNumbers = document.getElementById('use-numbers')
