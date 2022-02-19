@@ -30,7 +30,7 @@
                 <p class="input-heading dark-text">Income</p>
                 <div class="flex income-input dark-text">
                     <p class="input-text dark-text">Income:</p>
-                    <input id="income" class="input-style rounded" type="text">
+                    <input id="income" class="input-style rounded" type="number">
                 </div>
                 <div class="notify-section">
                     <p id="use-numbers" class="notify">❌ Please Give only Numbers</p>
@@ -39,15 +39,27 @@
                 <p class="expenses-heading dark-text">Expenses</p>
                 <div class="flex income-input dark-text">
                     <p class="input-text">Food:</p>
-                    <input id="food" class="input-style rounded dark-text" type="text">
+                    <input id="food" class="input-style rounded dark-text" type="number">
+                </div>
+                <div class="notify-section">
+                    <p id="usefood-numbers" class="notify">❌ Please Give only Numbers</p>
+                    <p id="usefood-positive-numbers" class="notify">❌ Please Don't Use (-) Numbers</p>
                 </div>
                 <div class="flex income-input dark-text">
                     <p class="input-text dark-text">Rent:</p>
-                    <input id="rent" class="input-style rounded" type="text">
+                    <input id="rent" class="input-style rounded" type="number">
+                </div>
+                <div class="notify-section">
+                    <p id="useRent-numbers" class="notify">❌ Please Give only Numbers</p>
+                    <p id="useRent-positive-numbers" class="notify">❌ Please Don't Use (-) Numbers</p>
                 </div>
                 <div class="flex income-input dark-text">
                     <p class="input-text">Clothes:</p>
-                    <input id="clothes" class="input-style rounded" type="text">
+                    <input id="clothes" class="input-style rounded" type="number">
+                </div>
+                <div class="notify-section">
+                    <p id="useClothes-numbers" class="notify">❌ Please Give only Numbers</p>
+                    <p id="useClothes-positive-numbers" class="notify">❌ Please Don't Use (-) Numbers</p>
                 </div>
                 <button id="calculate-button" class="calculate-button rounded dark-text">
                     Calculate
@@ -59,11 +71,14 @@
                 </div>
                 <div class="flex saving dark-text">
                     <p>Save:</p>
-                    <input id="savings-parsent" class="saving-input rounded" type="text">
+                    <input id="savings-parsent" class="saving-input rounded" type="number">
                     <p>%</p>
                     <button id="save-button" class="saving-button rounded">Save</button>
                 </div>
                 <p class="saving-amount dark-text">Saving Amount: <span id="total-savings">00</span> </p>
+                <div class="notify-section">
+                    <p id="no-savings" class="notify">❌ Your Balance is Over You can't save Your Money.</p>
+                </div>
                 <p class="remaining-balance dark-text">Remaining Balance: <span id="remaining-balance">00</span></p>
             </div>
         </div>
