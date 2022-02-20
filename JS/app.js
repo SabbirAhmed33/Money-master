@@ -62,21 +62,19 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
     // Get Sum of Total Cost
     const totalCost = document.getElementById('total-cost');
-    totalCost.innerText = parseFloat(foodCostValue) + parseFloat(rentCostValue) + parseFloat(clothesCostValue);
-    const totalCostValue = totalCost.innerText;
-
-
-    // Get Balance After Cost
-    const balance = document.getElementById('balance');
-    balance.innerText = getInput - totalCostValue;
-    const balanceOver = balance.innerText;
-
-    // Balance Error Handaler
-    const overCost = document.getElementById('over-cost');
-    if(balanceOver<totalCostValue){
-        overCost.style.display = 'block';
+    const totalCostValue = parseFloat(foodCostValue) + parseFloat(rentCostValue) + parseFloat(clothesCostValue);
+    // const totalCostValue = totalCost.innerText;
+    if(getInput>totalCostValue){
+        totalCost.innerText = totalCostValue;
+        const balance = document.getElementById('balance');
+        balance.innerText = getInput - totalCostValue;
+        const balanceOver = balance.innerText;
     }
-    
+    else{
+        const overCost = document.getElementById('over-cost');
+        overCost.style.display = 'block';
+        return;
+    }
 })
 
 
